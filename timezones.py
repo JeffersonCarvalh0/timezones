@@ -15,5 +15,6 @@ with open("times.txt") as f:
     sortedClients = sorted(clients.items(), key=lambda x: x[1])
     
     print("\nOrdered clients:")
+    print("Client     Date       Time+timezone")
     for client in sortedClients:
         print('client ' + client[0] + ' : ' + str(client[1] + tday))
