@@ -10,5 +10,5 @@ to run with the examples:
   python3 timezones.py
 ```
 
-The examples must have an index, following by space and then a date at iso 8601 format
+The examples must have an index, followed by space and then a date in iso 8601 format
 with timezone awareness.
