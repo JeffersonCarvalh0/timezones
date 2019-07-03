@@ -5,6 +5,8 @@ clients = {}
 
 with open("times.txt") as f:
     tday = dt.datetime.now(dt.timezone.utc)
+    print("Current server time(UTC):")
+    print(tday)
 
     for line in f:
         index, time = line.split()
@@ -12,5 +14,6 @@ with open("times.txt") as f:
 
     sortedClients = sorted(clients.items(), key=lambda x: x[1])
     
+    print("\nOrdered clients:")
     for client in sortedClients:
         print(client)
