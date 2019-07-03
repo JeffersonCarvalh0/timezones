@@ -16,4 +16,4 @@ with open("times.txt") as f:
     
     print("\nOrdered clients:")
     for client in sortedClients:
-        print(client)
+        print('client ' + client[0] + ' : ' + str(client[1] + tday))
